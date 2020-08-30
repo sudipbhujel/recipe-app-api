@@ -1,2 +1,6 @@
 # recipe-app-api
-recipe-app-api source code
+
+1. Start project in docker
+```
+docker-compose run app sh -c "django-admin.py startproject app ."
+```
