@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'core.apps.CoreConfig',
     'user.apps.UserConfig',
+    'recipe.apps.RecipeConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',
