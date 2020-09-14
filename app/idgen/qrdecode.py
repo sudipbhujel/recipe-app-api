@@ -1,9 +1,7 @@
-import os
-import re
-
 from PIL import Image
 
 from pyzbar.pyzbar import decode
+
 
 def decode_qr(filename='test_card.jpeg'):
     """
@@ -12,11 +10,11 @@ def decode_qr(filename='test_card.jpeg'):
     Parameters
     ----------
         filename: qrcode file path
-    
+
     Return
     ------
         dict: key value pair
-        
+
     """
     d = decode(Image.open(filename))
     data = d[0].data.decode('ascii')
